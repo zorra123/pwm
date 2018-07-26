@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"mypwm\startup_stm32f072xb.o"
+"mypwm\main.o"
+"mypwm\stm32f0xx_it.o"
+"mypwm\stm32f0xx_hal_msp.o"
+"mypwm\stm32f0xx_hal_tim.o"
+"mypwm\stm32f0xx_hal_tim_ex.o"
+"mypwm\stm32f0xx_hal_uart.o"
+"mypwm\stm32f0xx_hal_uart_ex.o"
+"mypwm\stm32f0xx_hal_rcc.o"
+"mypwm\stm32f0xx_hal_rcc_ex.o"
+"mypwm\stm32f0xx_hal.o"
+"mypwm\stm32f0xx_hal_i2c.o"
+"mypwm\stm32f0xx_hal_i2c_ex.o"
+"mypwm\stm32f0xx_hal_gpio.o"
+"mypwm\stm32f0xx_hal_dma.o"
+"mypwm\stm32f0xx_hal_cortex.o"
+"mypwm\stm32f0xx_hal_pwr.o"
+"mypwm\stm32f0xx_hal_pwr_ex.o"
+"mypwm\stm32f0xx_hal_flash.o"
+"mypwm\stm32f0xx_hal_flash_ex.o"
+"mypwm\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "MyPWM\MyPWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MyPWM.map" -o MyPWM\MyPWM.axf
